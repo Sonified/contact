@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Robert Alexander - Sonification Research</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌋</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .volcano-emoji {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .links-section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #aaa;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateX(5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .link-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+
+        .link-content {
+            flex: 1;
+        }
+
+        .link-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .link-description {
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        .arrow {
+            font-size: 20px;
+            color: #666;
+            transition: transform 0.3s ease;
+        }
+
+        .link-card:hover .arrow {
+            transform: translateX(5px);
+            color: #999;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            margin: 25px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .link-card {
+                padding: 15px;
+            }
+
+            .link-icon {
+                font-size: 28px;
+            }
+
+            .link-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="volcano-emoji">
+                <img src="Quantum_Background_Color.jpg" alt="Robert Alexander" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+            </div>
+            <h1>Robert Alexander</h1>
+            <div class="subtitle">The Sounds of Science + The Science of Sound</div>
+            <div class="tagline">Making data audible, making science accessible</div>
+        </div>
+
+        <div class="links-section">
+            <div class="section-title">What is Audification?</div>
+
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-bottom: 20px; background: rgba(0,0,0,0.3);">
+                <iframe
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                    src="https://www.youtube.com/embed/br75yvIcilE"
+                    title="Audification Explained"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="links-section">
+            <div class="section-title">Projects</div>
+
+            <a href="https://volcano.now.audio" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">🌋</div>
+                <div class="link-content">
+                    <div class="link-title">Volcano Seismic Audification</div>
+                    <div class="link-description">Interactive sonification of volcanic seismograms</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://spaceweather.now.audio" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">🌌</div>
+                <div class="link-content">
+                    <div class="link-title">Space Weather Audification</div>
+                    <div class="link-description">Exploring magnetosphere sounds from NASA data</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://www.breathscape.com" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">
+                    <img src="Breathscape_Logo_Square_1024x1024.jpg" alt="Breathscape" style="width: 32px; height: 32px;">
+                </div>
+                <div class="link-content">
+                    <div class="link-title">Breathscape</div>
+                    <div class="link-description">Breath-guided meditation and relaxation</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://listen.spacescience.org/" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">🛰️</div>
+                <div class="link-content">
+                    <div class="link-title">HARP Citizen Science</div>
+                    <div class="link-description">Listen to space sounds and help with research</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+
+        <div class="footer" style="margin-top: 40px;">
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://www.youtube.com/@Sonification" target="_blank" rel="noopener" style="transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#FF0000"/>
+                        <path d="M19.615 8.768c-.195-.73-.768-1.303-1.498-1.498C16.897 7 12 7 12 7s-4.897 0-6.117.27c-.73.195-1.303.768-1.498 1.498C4.115 9.988 4 11.5 4 11.5s0 1.512.115 2.732c.195.73.768 1.303 1.498 1.498C6.833 16 12 16 12 16s4.897 0 6.117-.27c.73-.195 1.303-.768 1.498-1.498.27-1.22.385-2.732.385-2.732s0-1.512-.115-2.732z" fill="white"/>
+                        <path d="M10.5 14.5v-6l5.5 3-5.5 3z" fill="#FF0000"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/sonified/" target="_blank" rel="noopener" style="transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <defs>
+                            <linearGradient id="instagramGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#FED373;stop-opacity:1" />
+                                <stop offset="25%" style="stop-color:#F15245;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#D92E7F;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#9B36B7;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill="url(#instagramGradient)"/>
+                        <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2" fill="none"/>
+                        <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+                        <rect x="6" y="6" width="12" height="12" rx="3" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.facebook.com/Sonification/" target="_blank" rel="noopener" style="transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#1877F2"/>
+                        <path d="M16.5 12.75l.438-2.813H14.25V8.25c0-.773.375-1.5 1.575-1.5h1.238V4.313A15.128 15.128 0 0014.813 4.125c-2.25 0-3.75 1.388-3.75 3.9v2.213H8.625v2.812h2.438V19.5h3V12.75h2.438z" fill="white"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/sonification" target="_blank" rel="noopener" style="transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                        <path d="M7 9h2.5v9H7V9zm1.25-3c.8 0 1.25.5 1.25 1.25S9.05 8.5 8.25 8.5 7 8 7 7.25 7.45 6 8.25 6zm3.5 3h2.5v1.25c.35-.6 1.2-1.25 2.5-1.25 2.7 0 3.25 1.8 3.25 4v5H16V13c0-1.5-.5-2.25-1.5-2.25S13 11.5 13 13v5h-2.5V9z" fill="white"/>
+                    </svg>
+                </a>
+
+                <a href="mailto:robert@auralab.io" target="_blank" rel="noopener" style="transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#EA4335"/>
+                        <path d="M20 8l-8 5-8-5V6l8 5 8-5v2zm0-2c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
