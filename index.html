@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Robert Alexander - Sonification Research</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌋</text></svg>">
+    <link rel="icon" href="Quantum_Background_Color.jpg">
     <style>
         * {
             margin: 0;
@@ -14,7 +14,15 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(315deg,
+                #0d1117 0%,
+                #1a2645 25%,
+                #2d1b4e 50%,
+                #3d1835 75%,
+                #1a1225 100%
+            );
+            background-size: 150% 150%;
+            background-position: var(--bg-x, 50%) var(--bg-y, 50%);
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -26,7 +34,7 @@
         .container {
             max-width: 600px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.25);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 40px;
@@ -47,21 +55,35 @@
         h1 {
             font-size: 28px;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #ff6b6b, #feca57);
+            background-size: 200% 100%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            animation: gradient-shift 180s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .subtitle {
-            font-size: 16px;
-            color: #aaa;
+            font-size: 18px;
+            color: #e0e0e0;
             margin-bottom: 5px;
         }
 
         .tagline {
-            font-size: 14px;
-            color: #888;
+            font-size: 16px;
+            color: #d0d0d0;
             font-style: italic;
         }
 
@@ -70,10 +92,10 @@
         }
 
         .section-title {
-            font-size: 14px;
+            font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #aaa;
+            color: #d0d0d0;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -81,7 +103,7 @@
         .link-card {
             background: rgba(255, 255, 255, 0.08);
             border-radius: 12px;
-            padding: 18px 20px;
+            padding: 10px 20px;
             margin-bottom: 12px;
             text-decoration: none;
             display: flex;
@@ -154,7 +176,7 @@
             }
 
             .link-card {
-                padding: 15px;
+                padding: 12px 15px;
             }
 
             .link-icon {
@@ -173,27 +195,28 @@
             <div class="volcano-emoji">
                 <img src="Quantum_Background_Color.jpg" alt="Robert Alexander" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
             </div>
-            <h1>Robert Alexander</h1>
+            <h1>Dr. Robert Alexander</h1>
             <div class="subtitle">The Sounds of Science + The Science of Sound</div>
-            <div class="tagline">Making data audible, making science accessible</div>
         </div>
 
         <div class="links-section">
-            <div class="section-title">What is Audification?</div>
+            <!-- <div class="section-title" style="text-transform: none;">What is Data Audification?</div> -->
 
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-bottom: 20px; background: rgba(0,0,0,0.3);">
                 <iframe
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; pointer-events: none;"
                     src="https://www.youtube.com/embed/br75yvIcilE"
                     title="Audification Explained"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: auto;"
+                     onmouseenter="this.style.pointerEvents='none'"></div>
             </div>
         </div>
 
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
 
         <div class="links-section">
             <div class="section-title">Projects</div>
@@ -201,7 +224,7 @@
             <a href="https://volcano.now.audio" class="link-card" target="_blank" rel="noopener">
                 <div class="link-icon">🌋</div>
                 <div class="link-content">
-                    <div class="link-title">Volcano Seismic Audification</div>
+                    <div class="link-title">Volcano Audification</div>
                     <div class="link-description">Interactive sonification of volcanic seismograms</div>
                 </div>
                 <div class="arrow">→</div>
@@ -222,7 +245,7 @@
                 </div>
                 <div class="link-content">
                     <div class="link-title">Breathscape</div>
-                    <div class="link-description">Breath-guided meditation and relaxation</div>
+                    <div class="link-description">Breath biofeedback for meditation and relaxation</div>
                 </div>
                 <div class="arrow">→</div>
             </a>
@@ -232,6 +255,24 @@
                 <div class="link-content">
                     <div class="link-title">HARP Citizen Science</div>
                     <div class="link-description">Listen to space sounds and help with research</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://sonified.github.io/RT-Solar-Wind/" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">☀️</div>
+                <div class="link-content">
+                    <div class="link-title">Solar Wind Perceptualizer (Beta)</div>
+                    <div class="link-description">Visualization of solar wind activity at the ACE Spacecraft</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="https://sonified.github.io/EMDR/" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">👁️</div>
+                <div class="link-content">
+                    <div class="link-title">EMDR Tool (Beta)</div>
+                    <div class="link-description">Eye movement desensitization and reprocessing portal</div>
                 </div>
                 <div class="arrow">→</div>
             </a>
@@ -287,5 +328,18 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth);
+            const y = (e.clientY / window.innerHeight);
+
+            // Inverted movement - gradient follows mouse
+            const bgX = 75 - (x * 50); // Range: 75% to 25%
+            const bgY = 75 - (y * 50); // Range: 75% to 25%
+
+            document.body.style.setProperty('--bg-x', `${bgX}%`);
+            document.body.style.setProperty('--bg-y', `${bgY}%`);
+        });
+    </script>
 </body>
 </html>

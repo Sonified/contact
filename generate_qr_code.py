@@ -7,7 +7,7 @@ import qrcode
 from pathlib import Path
 
 # URL to encode
-url = "https://contact.now.audio"
+url = "http://contact.now.audio"
 
 # Create QR code instance
 qr = qrcode.QRCode(
